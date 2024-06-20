@@ -1,0 +1,433 @@
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/MaterialIcons-Regular.ttf);
+	/* For IE6-8 */
+	src: local('Material Icons'),
+		local('MaterialIcons-Regular'),
+		url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Material Symbols Outlined';
+	font-style: normal;
+	font-weight: 100 700;
+	src: url(../fonts/MaterialSymbolsOutlined.woff2) format('woff2');
+}
+
+
+:root {
+	font-family: monospace;
+	font-weight: 600;
+	box-sizing: inherit;
+}
+
+a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+.material-symbols-outlined {
+	font-family: 'Material Symbols Outlined';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	/* Preferred icon size */
+	/* display: inline-block; */
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background-color: var(--light-gray);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	font-size: 48px;
+	margin-left: 13px;
+	color: var(--dark-gray);
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bp-type {
+	display: flex;
+	justify-content: center;
+}
+
+.bp-email {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.bp-detail-container {
+	margin-left: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	padding-top: 55px;
+}
+
+
+.in-t1 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	margin-bottom: 30px;
+	border: 0px;
+	text-indent: 60px;
+	padding: 0px;
+	padding-right: 12px;
+	background: var(--light-gray-gradient);
+	background-size: 150% 100%;
+	background-position: -100px 50px;
+	transition: background 0.5s linear;
+}
+
+.in-t1:hover {
+	background-position: 100px 0px;
+}
+
+.in-t1:focus {
+	outline: 1px solid var(--dark-gray);
+}
+
+.in-t2 {
+	box-sizing: border-box;
+	font-size: 16px;
+	width: calc(100% - 40px);
+	height: 40px;
+	border-radius: 5px 0px 0px 5px;
+	margin: 0px;
+	border: 0px;
+	text-indent: 10px;
+	padding: 0px;
+	padding-right: 0px;
+	background: var(--lighter-gray);
+	background-size: 150% 100%;
+	background-position: -100px 50px;
+	transition: background 0.5s linear;
+}
+
+.input-icon {
+	width: 100%;
+}
+
+.input-icon::before {
+	box-sizing: border-box;
+	position: absolute;
+	display: inline-block;
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+	padding: 0px;
+	padding-left: 20px;
+	border-radius: 25px 0px 0px 25px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-family: 'Material Icons';
+}
+
+.input-icon:hover::before {
+	background-color: #bbb;
+	-webkit-transition: background-color 0.5s linear;
+	-ms-transition: background-color 0.5s linear;
+	transition: background-color 0.5s linear;
+}
+
+
+.bt-t1 {
+	font-size: 16px;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	color: var(--dark-gray);
+	border: 0px;
+	border-radius: 25px;
+	padding: 0px;
+	margin-bottom: 30px;
+	background: var(--light-gray-gradient-rot);
+	background-size: 320px 50px;
+	background-position: -170px 0px;
+	transition: background 0.3s linear;
+	text-align: center;
+}
+
+.bt-t1:hover {
+	background-position: -20px 0px;
+}
+
+.bt-t2 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	height: 40px;
+	width: 40px;
+	color: #fff;
+	border: 0px;
+	border-radius: 0px 5px 5px 0px;
+	background-color: var(--dark-green);
+	background-size: 320px 50px;
+	background-position: -170px 0px;
+	transition: background 0.3s linear;
+}
+
+.b2-t2:hover {
+	background-color: var(--darker-green);
+}
+
+.bt-t3 {
+	display: flex;
+	font-family: 'Material Symbols Outlined';
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	border: 0px;
+	border-radius: 5px !important;
+	background-color: var(--light-blue);
+	box-shadow: var(--shadow-2);
+	color: var(--lighter-gray);
+	align-items: center;
+	justify-content: center;
+}
+
+.bt-t3:hover {
+	box-shadow: var(--shadow-3);
+	background-color: var(--dark-blue);
+	color: var(--light-gray);
+}
+
+.bg-blue {
+	background-color: var(--light-blue);
+}
+
+.bg-blue:hover {
+	background-color: var(--dark-blue);
+}
+
+.bg-green {
+	background-color: var(--dark-green);
+}
+
+.bg-green:hover {
+	background-color: var(--darker-green);
+}
+
+.bg-red {
+	background-color: var(--dark-red);
+}
+
+.bg-red:hover {
+	background-color: var(--darker-red);
+}
+
+.toggle-switch-container {
+	position: relative;
+	display: inline-block;
+	width: 90px;
+	height: 34px;
+	border-radius: 34px;
+	margin-bottom: 30px;
+}
+
+.toggle-switch-container .toggle-switch {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.toggle-switch-container .toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00baff;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 34px;
+	width: 120px;
+	content: "Applicant";
+	/* margin-left: 30px; */
+}
+
+.toggle-slider::before {
+	box-sizing: border-box;
+	position: absolute;
+	font-family: "Material Icons";
+	line-height: 26px;
+	padding-left: 5px;
+	content: "person";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+.toggle-slider::after {
+	color: #fff;
+	position: absolute;
+	left: 40px;
+	line-height: 34px;
+	font-weight: bold;
+	content: "Applicant";
+	transition: .4s;
+}
+
+input:checked+.toggle-slider::after {
+
+	color: #fff;
+	content: "Employer";
+	-webkit-transform: translateX(-25px);
+	-ms-transform: translateX(-25px);
+	transform: translateX(-25px);
+}
+
+
+input:checked+.toggle-slider::before {
+	content: "storefront";
+}
+
+input:checked+.toggle-slider {
+	background-color: #2196F3;
+}
+
+input:focus+.toggle-slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.toggle-slider::before {
+	-webkit-transform: translateX(86px);
+	-ms-transform: translateX(86px);
+	transform: translateX(86px);
+}
+
+
+.error-container {
+	z-index: 8;
+	position: absolute;
+	top: 30px;
+	left: calc(50% - 125px);
+}
+
+
+.error {
+	display: none;
+	background: var(--light-gray-gradient);
+	color: #f00;
+	width: 190px;
+	min-height: 30px;
+	border-radius: 500px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+.success {
+	display: none;
+	background: var(--light-gray-gradient);
+	color: #008000;
+	width: 190px;
+	min-height: 30px;
+	border-radius: 500px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@keyframes error_slideIn {
+	0% {
+		transform: translateY(-450%);
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes error_slideOut {
+	0% {
+		transform: translateY(0);
+		opacity: 1
+	}
+
+	100% {
+		transform: translateY(-450%);
+		opacity: 0.3;
+	}
+}
+
+.error-slideIn {
+	animation: error_slideIn 1s forwards;
+}
+
+.error-slideOut {
+	animation: error_slideOut 1s forwards;
+}

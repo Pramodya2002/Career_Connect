@@ -1,0 +1,239 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #82b4e0, #1d5abc);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    background: url('../img/login.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-icon::before {
+    font-family: 'Material Icons';
+    font-size: 24px;
+    color: #888;
+    margin-right: 10px;
+}
+
+.input-icon.email::before {
+    content: "mail_outline";
+}
+
+.input-icon.pass::before {
+    content: "lock";
+}
+
+.input-icon.r-pass::before {
+    content: "lock_open";
+}
+
+input.in-t1 {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: calc(100% - 30px);
+    font-size: 16px;
+}
+
+input.in-t1:focus {
+    outline: none;
+    border: 2px solid #4a90e2;
+}
+
+.bt-t1 {
+    background-color: #4a90e2; /* Updated login button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.bt-t1:hover {
+    background-color: #357abd; /* Darker shade on hover */
+}
+
+#r-btn {
+    background-color: #1d5abc; /* Updated next button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0; /* Adjust padding to center text vertically */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px; /* Adjusted margin */
+}
+
+#r-btn:hover {
+    background-color: #0f3a6f; /* Darker shade on hover */
+}
+
+.tr-link button {
+    background-color: #1d5abc; /* Updated toggle button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tr-link button:hover {
+    background-color: #0f3a6f; /* Darker shade on hover */
+}
+
+/* Styles for the toggle switch */
+.toggle-switch-container {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Increased width */
+    height: 50px; /* Increased height */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+.toggle-switch {
+    display: none;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 0px; /* Rounded shape */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 25px; /* Size of the circle */
+    width: 25px; /* Size of the circle */
+    left: 3px; /* Adjust for centering */
+    bottom: 3px; /* Adjust for centering */
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.toggle-switch:checked + .toggle-slider {
+    background-color: #050506; /* Updated background color when checked */
+}
+
+.toggle-switch:checked + .toggle-slider:before {
+    transform: translateX(40px); /* Adjust translation for larger width */
+}
+
+.toggle-switch:checked + .toggle-slider:before {
+    content: "Employer"; /* Text when checked */
+    color: white; /* Text color when checked */
+    font-size: 14px; /* Adjust font size */
+    padding-left: 8px; /* Padding to adjust text position */
+}
+
+.toggle-slider:before {
+    content: "Applicant"; /* Default text */
+    color: #050506; /* Default text color */
+    font-size: 14px; /* Adjust font size */
+    padding-left: 8px; /* Padding to adjust text position */
+}
+
+.toggle-slider {
+    background-color: #ccc; /* Slider background color */
+}
+
+.toggle-slider {
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+@media (max-width: 760px) {
+    .main-container {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 90%;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tr-link {
+        top: 10px;
+        right: 20px;
+    }
+}

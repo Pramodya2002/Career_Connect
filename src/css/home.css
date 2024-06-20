@@ -1,0 +1,165 @@
+body {
+  box-sizing: border-box;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero {
+  background-color: #9dc1e5;
+  opacity: 0.9;
+  color: #fff;
+  padding: 50px 5px;
+  text-align: center;
+}
+
+.logo-image {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  margin-right: 20px; /* Margin to separate logo from text */
+  border-radius: 50%; /* Rounded shape */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.logo-image:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #1d056b; /* Dark purple color */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #300f91; /* Dark purple color */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif /* Change font family */
+}
+
+.hero p {
+  font-size: 1.5rem; /* Increased font size for emphasis */
+  line-height: 1.8; /* Adjusted line height for better readability */
+  color: #555; /* Slightly darker gray color */
+  margin-top: 10px; /* Space above the paragraph */
+  font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.hero p::first-letter {
+  font-size: 2.8rem; /* Larger first letter size */
+  font-weight: bold; /* Bold first letter */
+  color: #0073e6; /* Blue color for the first letter */
+  margin-right: 5px; /* Space to the right of the first letter */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  padding: 30px 20px;
+}
+
+.Row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .Row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+
+.counts {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.count-element {
+  text-align: center;
+  padding: 20px;
+  background-color: #94bcf8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.count-element:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.count-element h1 {
+  font-size: 3rem;
+  color: #4d4dff;
+  margin-bottom: 10px;
+}
+
+.count-element span {
+  display: block;
+  font-size: 1.2rem;
+  color: #2c2020;
+}
+
+
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}

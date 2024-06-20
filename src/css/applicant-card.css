@@ -1,0 +1,330 @@
+.material-symbols-outlined{
+    line-height: 30px;
+}
+
+.card-container {
+    padding: 20px;
+    min-height: 500px;
+    min-width: 540px;
+    float: left;
+    width: 65%;
+    background-color: #fff;
+    font-family: monospace;
+    border-radius: 0px 5px 5px 0px;
+  }
+.gameSection{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.applicant-container{
+    display: grid;
+    background-color: #fff;
+    min-width: 500px;
+    /*border : 1px solid black;*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.applicant-container.more{
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.Mtitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+	font-weight: bolder;
+	background: var(--theme-gradient-normal);
+ 	-webkit-background-clip: text;
+	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.title{
+
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.applicant-container .thumb img{
+    border-radius: 10px;
+}
+
+
+.thumb{
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+.desc{
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.aname{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.atype{
+    font-size: 11px;
+    font-weight: bold;
+    color: #888888;
+    padding-left: 10px;
+}
+
+.auname{
+    font-size: 11px;
+    font-weight: bolder;
+    color: #555555;
+    padding-left: 10px;
+}
+
+.desc{
+    font-size: 11px;
+    font-weight: bold;
+    color: #888888;
+    padding-left: 10px;
+}
+
+.colspan-2{
+    grid-column: 5/3;
+}
+
+.colspan-1-3{
+    grid-column: 1/3;
+}
+
+.row-gap-10{
+    row-gap: 10px;
+}
+
+.button{
+    height: 30px;
+    width: 120px;
+    border: 0px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button .text{
+    padding: 5px;
+    font-family: monospace;
+    font-weight: bolder;
+    position:relative; 
+    top:-7px
+}
+
+.download form button.button{
+    background-color: rgb(36, 148, 233);    
+}
+
+.download form button.button:hover{
+    background-color: rgb(24, 103, 192);    
+}
+
+.approve form button.button{
+    background-color: rgb(74, 137, 10);    
+}
+.approve form button.button:hover{
+    background-color: rgb(57, 107, 8);    
+}
+
+.reject form button.button{
+    background-color: rgb(215,41,43);  
+}
+
+.reject form button.button:hover{
+    background-color:rgb(171, 33, 36);
+}
+
+.unbind form button.button{
+    background-color: rgb(235,53,137);
+}
+
+.unbind form button.button:hover{
+    background-color: rgb(172, 33, 75);
+}
+
+.align-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-t2-1{
+    width: 240px;
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 13px;
+}
+
+
+.in-t3{
+	width: 90%;
+	height: 30px;
+	border-radius: 4px;
+    margin: 0px 10px;
+}
+
+
+.status-indicator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width : 120px;
+    height: 30px;
+    color: var(--text-color-1);
+    animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+}
+
+.status-indicator-container.pending{
+    background-color: var(--light-yellow);
+    border: 1px solid var(--dark-yellow);
+    animation-name: colorChangeYellowInverse;
+}
+
+.status-indicator-container.approved{
+    background-color: var(--dark-green);
+    border: 1px solid var(--darker-green);
+    animation-name: colorChangeGreenInverse;
+}
+
+.status-indicator-container.interview{
+    background-color: var(--light-blue);
+    border: 1px solid var(--dark-blue);
+    animation-name: colorChangeBlueInverse;
+}
+
+.status-indicator-container.rejected{
+    background-color: var(--dark-red);
+    border: 1px solid var(--darker-red);
+    animation-name: colorChangeRedInverse;
+}
+
+
+.status-indicator{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+}
+
+.status-indicator.pending{
+    background-color: var(--dark-yellow);
+    animation-name: colorChangeYellow;
+}
+
+.status-indicator.interview{
+    background-color: var(--dark-blue);
+    animation-name: colorChangeBlue;
+}
+
+.status-indicator.approved{
+    background-color: var(--dark-green);
+    animation-name: colorChangeGreen;
+}
+
+.status-indicator.rejected{
+    background-color: var(--dark-red);
+    animation-name: colorChangeRed;
+}
+
+.default{
+    width: fit-content;
+    height: fit-content;
+}
+
+@keyframes colorChangeYellow {
+	0% {
+		background-color: var(--dark-yellow);
+	}
+	50% {
+		background-color: var(--light-yellow);
+	}
+}
+
+@keyframes colorChangeYellowInverse {
+    0% {
+        background-color: var(--light-yellow);
+    }
+    50% {
+        background-color: var(--dark-yellow);
+    }
+}
+
+@keyframes colorChangeGreen {
+    0% {
+        background-color: var(--darker-green);
+    }
+    50% {
+        background-color: var(--dark-green);
+    }
+    
+}
+
+@keyframes colorChangeGreenInverse {
+    0% {
+        background-color: var(--dark-green);
+    }
+    50% {
+        background-color: var(--darker-green);
+    }
+}
+
+@keyframes colorChangeBlue {
+    0% {
+        background-color: var(--dark-blue);
+    }
+    50% {
+        background-color: var(--light-blue);
+    }
+}
+
+@keyframes colorChangeBlueInverse {
+    0% {
+        background-color: var(--light-blue);
+    }
+    50% {
+        background-color: var(--dark-blue);
+    }
+}
+
+@keyframes colorChangeRed {
+    0% {
+        background-color: var(--darker-red);
+    }
+    50% {
+        background-color: var(--dark-red);
+    }
+}
+
+@keyframes colorChangeRedInverse {
+    0% {
+        background-color: var(--dark-red);
+    }
+    50% {
+        background-color: var(--darker-red);
+    }
+}
